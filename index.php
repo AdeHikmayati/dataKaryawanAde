@@ -23,9 +23,8 @@ $dataKaryawan= query("SELECT * FROM dataKaryawan");
 <a href="tambah.php">Tambah data</a>
 <br></br>
 <form action="" method="post">
-<input type="text" name="keyword" id="keyword" size=40 autofocus placeholder="masukan keyword disini"  autocomplete="off">
-<button type="submit" name="cari" id="tombol-cari">search</button>
-<br></br>
+
+
 
 </form>
 <div id="container">
@@ -35,12 +34,12 @@ $dataKaryawan= query("SELECT * FROM dataKaryawan");
     <th>Aksi</th>
     <th>NIK</th>
     <th>Nama</th>
-    <th>alamat</th>
-    <th>email</th>
-    <th>tempat lahir</th>
-    <th>tanggal lahir</th>
-    <th>gender</th>
-    <th>keahlian</th>
+    <th>Alamat</th>
+    <th>Email</th>
+    <th>Tempat Lahir</th>
+    <th>Tanggal Lahir</th>
+    <th>Gender</th>
+    <th>Keahlian</th>
     </tr>
     <?php $i = 1; ?>
     <?php foreach($dataKaryawan as $row):?>
@@ -49,7 +48,7 @@ $dataKaryawan= query("SELECT * FROM dataKaryawan");
     <td><?= $i;?></td>
     <td>
     <a href="ubah.php?id=<?= $row["id"]; ?>">Ubah</a> | 
-    <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm('yakin')";>Hapus</a>
+    <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm('Anda yakin akan menghapus data ini?')";>Hapus</a>
     </td>
     <td><?= $row["nik"];?></td>
     <td><?= $row["nama"];?></td>
@@ -67,6 +66,6 @@ $dataKaryawan= query("SELECT * FROM dataKaryawan");
     </table>
     
 </div>
-    <script src="skrip.js"></script>
+    
 </body>
 </html>
