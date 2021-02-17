@@ -58,11 +58,11 @@ if (tambah($_POST) > 0 ){
 
 <label for="keahlian">Keahlian : </label>
 
-<p><input type='checkbox' name='bahasa1' value='php' required />PHP</p>
-      <p><input type='checkbox' name='bahasa2' value='asp' required/>ASP</p>
-      <p><input type='checkbox' name='bahasa3' value='jsp' required/>JSP</p>
-      <p><input type='checkbox' name='bahasa2' value='html' required/>HTML</p>
-      <p><input type='checkbox' name='bahasa3' value='css' required/>CSS</p>
+<p><input type='checkbox' name='bahasa1' value='php'  />PHP</p>
+      <p><input type='checkbox' name='bahasa2' value='asp' />ASP</p>
+      <p><input type='checkbox' name='bahasa3' value='jsp' />JSP</p>
+      <p><input type='checkbox' name='bahasa4' value='html' />HTML</p>
+      <p><input type='checkbox' name='bahasa5' value='css' />CSS</p>
 
 <button type="submit" name="submit">Tambah</button>
 
