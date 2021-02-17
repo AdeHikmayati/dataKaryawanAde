@@ -30,10 +30,12 @@ if (isset($_POST["submit"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubah data</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1>Ubah Data</h1>
+    <div>
     <form action="" method="post" enctype="multipart/form-data">
         <label for="nik">NIK : </label>
         <input type="hidden" name="id" id="id" value="<?= $karyawan["id"]; ?>"><br>
@@ -51,21 +53,21 @@ if (isset($_POST["submit"])) {
         <label for="tanggal_lahir">Tanggal Lahir: </label>
         <input type="date" name="tanggal_lahir" id="tanggal_lahir" value="<?= $karyawan["tanggal_lahir"]; ?>"><br>
         <label for="gender">Jenis Kelamin : </label>
-        <select   name ="gender"size=3 id ="gender">
+        <select name="gender" id="gender">
 
-<option name='gender[]'value="perempuan">perempuan</option>
+            <option name='gender[]' value="perempuan">perempuan</option>
 
-<option name='gender[]' value="laki-laki">Laki-laki</option>
+            <option name='gender[]' value="laki-laki">Laki-laki</option>
 
 
-</select> <br>
+        </select> <br>
         <label for="keahlian">Keahlian : </label>
 
         <p><input type='checkbox' name='keahlian[]' value="php" />PHP</p>
-        <p><input type='checkbox' name='keahlian[]' value="asp"/> ASP</p>
-        <p><input type='checkbox' name='keahlian[]' value="jsp"/>JSP</p>
-        <p><input type='checkbox' name='keahlian[]' value="html"/>HTML</p>
-        <p><input type='checkbox' name='keahlian[]' value="css"/>CSS</p>
+        <p><input type='checkbox' name='keahlian[]' value="asp" /> ASP</p>
+        <p><input type='checkbox' name='keahlian[]' value="jsp" />JSP</p>
+        <p><input type='checkbox' name='keahlian[]' value="html" />HTML</p>
+        <p><input type='checkbox' name='keahlian[]' value="css" />CSS</p>
 
 
 
@@ -74,7 +76,7 @@ if (isset($_POST["submit"])) {
 
 
     </form>
-
+    </div>
 </body>
 
 </html>
