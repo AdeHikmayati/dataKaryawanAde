@@ -57,6 +57,8 @@ if (isset($_POST["submit"])) {
         <p><input type='checkbox' name='bahasa1' value="<?= $karyawan["keahlian"]; ?>" />PHP</p>
         <p><input type='checkbox' name='bahasa2' value="<?= $karyawan["keahlian"]; ?>" />ASP</p>
         <p><input type='checkbox' name='bahasa3' value="<?= $karyawan["keahlian"]; ?>" />JSP</p>
+        <p><input type='checkbox' name='bahasa3' value="<?= $karyawan["keahlian"]; ?>" />HTML</p>
+        <p><input type='checkbox' name='bahasa3' value="<?= $karyawan["keahlian"]; ?>" />CSS</p>
 
 
 
