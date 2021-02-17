@@ -2,10 +2,6 @@
 require 'fungsi2.php';
 $dataKaryawan= query("SELECT * FROM dataKaryawan");
 
-// //tombol cari di klik
-// if(isset($_POST["cari"])){
-//     $mahasiswa = cari($_POST["keyword"]);
-// }
 
 
 ?>
@@ -15,7 +11,10 @@ $dataKaryawan= query("SELECT * FROM dataKaryawan");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Data Karyawan</title>
+    <style src = "style.css"></style>
+
 </head>
 <body>
 
