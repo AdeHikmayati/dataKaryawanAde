@@ -49,6 +49,7 @@ if (tambah($_POST) > 0 ){
 
 <select   name ="gender"size=3 id ="gender">
 
+
 <option value="perempuan" selected="selected">perempuan</option>
 
 <option value="laki-laki"> Laki-laki</option>
@@ -58,11 +59,11 @@ if (tambah($_POST) > 0 ){
 
 <label for="keahlian">Keahlian : </label>
 
-<p><input type='checkbox' name='bahasa1' value='php'  />PHP</p>
-      <p><input type='checkbox' name='bahasa2' value='asp' />ASP</p>
-      <p><input type='checkbox' name='bahasa3' value='jsp' />JSP</p>
-      <p><input type='checkbox' name='bahasa4' value='html' />HTML</p>
-      <p><input type='checkbox' name='bahasa5' value='css' />CSS</p>
+<p><input type='checkbox' name='keahlian[]' value='php'  />PHP</p>
+      <p><input type='checkbox' name='keahlian[]' value='asp' />ASP</p>
+      <p><input type='checkbox' name='keahlian[]'value='jsp' />JSP</p>
+      <p><input type='checkbox' name='keahlian[]' value='html' />HTML</p>
+      <p><input type='checkbox' name='keahlian[]' value='css' />CSS</p>
 
 <button type="submit" name="submit">Tambah</button>
 

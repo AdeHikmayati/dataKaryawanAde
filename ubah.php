@@ -51,14 +51,21 @@ if (isset($_POST["submit"])) {
         <label for="tanggal_lahir">Tanggal Lahir: </label>
         <input type="date" name="tanggal_lahir" id="tanggal_lahir" value="<?= $karyawan["tanggal_lahir"]; ?>"><br>
         <label for="gender">Jenis Kelamin : </label>
-        <input type="text" name="gender" id="gender" value="<?= $karyawan["gender"]; ?>"><br>
+        <select   name ="gender"size=3 id ="gender">
+
+<option value="<?= $karyawan["gender"] ;?>">perempuan</option>
+
+<option value="<?= $karyawan["gender"] ;?>">Laki-laki</option>
+
+
+</select> <br>
         <label for="keahlian">Keahlian : </label>
 
-        <p><input type='checkbox' name='bahasa1' value="<?= $karyawan["keahlian"]; ?>" />PHP</p>
-        <p><input type='checkbox' name='bahasa2' value="<?= $karyawan["keahlian"]; ?>" />ASP</p>
-        <p><input type='checkbox' name='bahasa3' value="<?= $karyawan["keahlian"]; ?>" />JSP</p>
-        <p><input type='checkbox' name='bahasa4' value="<?= $karyawan["keahlian"]; ?>" />HTML</p>
-        <p><input type='checkbox' name='bahasa5' value="<?= $karyawan["keahlian"]; ?>" />CSS</p>
+        <p><input type='checkbox' name='keahlian[]' value="php" />PHP</p>
+        <p><input type='checkbox' name='keahlian[]' value="asp"/> ASP</p>
+        <p><input type='checkbox' name='keahlian[]' value="jsp"/>JSP</p>
+        <p><input type='checkbox' name='keahlian[]' value="html"/>HTML</p>
+        <p><input type='checkbox' name='keahlian[]' value="css"/>CSS</p>
 
 
 

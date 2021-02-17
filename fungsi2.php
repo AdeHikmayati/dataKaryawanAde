@@ -24,7 +24,7 @@ function tambah($data)
         $tempat_lahir= htmlspecialchars($data["tempat_lahir"]);
         $tanggal_lahir = htmlspecialchars($data["tanggal_lahir"]);
         $gender = htmlspecialchars($data["gender"]);
-        $keahlian = htmlspecialchars($data["keahlian"]);
+        $keahlian = implode(', ', $data["keahlian"]);
       
        
        
@@ -52,7 +52,7 @@ VALUES
         $tempat_lahir= htmlspecialchars($data["tempat_lahir"]);
         $tanggal_lahir = htmlspecialchars($data["tanggal_lahir"]);
         $gender = htmlspecialchars($data["gender"]);
-        $keahlian = htmlspecialchars($data["keahlian"]);
+        $keahlian = implode(', ', $data["keahlian"]);
         
         
         
