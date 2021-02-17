@@ -21,7 +21,7 @@ $dataKaryawan = query("SELECT * FROM dataKaryawan");
 <body>
 
     <h1>Daftar Karyawan</h1>
-    <button class="button button1"><a href="tambah.php">Tambah data</a></button>
+    <a href="tambah.php"><button class="button button1">Tambah data</button></a>
 
     <br></br>
     <form action="" method="post">
@@ -49,9 +49,9 @@ $dataKaryawan = query("SELECT * FROM dataKaryawan");
                 <tr>
                     <td><?= $i; ?></td>
                     <td>
-                        <button class="button button2"> <a href="ubah.php?id=<?= $row["id"]; ?>">Ubah</a></button>
+                    <a  href="ubah.php?id=<?= $row["id"]; ?>"><button class="button button2"> Ubah</button></a>
 
-                        <button class="button button3"><a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm('Anda yakin akan menghapus data ini?')" ;>Hapus</a></button>
+                      <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm('Anda yakin akan menghapus data ini?')" ;>  <button class="button button3">Hapus</button></a>
 
                     </td>
                     <td><?= $row["nik"]; ?></td>

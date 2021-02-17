@@ -59,7 +59,7 @@ if (isset($_POST["submit"])) {
 
 
             </select> <br>
-
+            <input id="radio-for-checkboxes" type="radio" name="radio-for-required-checkboxes" required/>
             <label for="keahlian">Keahlian : </label>
 
             <p><input type='checkbox' name='keahlian[]' value='php' />PHP</p>
@@ -75,7 +75,7 @@ if (isset($_POST["submit"])) {
 
         </form>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

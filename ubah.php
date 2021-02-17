@@ -61,15 +61,17 @@ if (isset($_POST["submit"])) {
 
 
         </select> <br>
+  
+        <input id="radio-for-checkboxes" type="radio" name="radio-for-required-checkboxes" required/>
+     
         <label for="keahlian">Keahlian : </label>
-
         <p><input type='checkbox' name='keahlian[]' value="php" />PHP</p>
         <p><input type='checkbox' name='keahlian[]' value="asp" /> ASP</p>
         <p><input type='checkbox' name='keahlian[]' value="jsp" />JSP</p>
         <p><input type='checkbox' name='keahlian[]' value="html" />HTML</p>
         <p><input type='checkbox' name='keahlian[]' value="css" />CSS</p>
 
-
+        </div>
 
         <button type="submit" name="submit">Ubah data</button>
 
@@ -77,6 +79,8 @@ if (isset($_POST["submit"])) {
 
     </form>
     </div>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>
