@@ -51,7 +51,7 @@ VALUES
         $email =htmlspecialchars($data["email"]);
         $tempat_lahir= htmlspecialchars($data["tempat_lahir"]);
         $tanggal_lahir = htmlspecialchars($data["tanggal_lahir"]);
-        $gender = htmlspecialchars($data["gender"]);
+        $gender = ($data["gender"]);
         $keahlian = implode(', ', $data["keahlian"]);
         
         

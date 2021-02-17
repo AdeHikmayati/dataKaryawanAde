@@ -53,9 +53,9 @@ if (isset($_POST["submit"])) {
         <label for="gender">Jenis Kelamin : </label>
         <select   name ="gender"size=3 id ="gender">
 
-<option value="<?= $karyawan["gender"] ;?>">perempuan</option>
+<option name='gender[]'value="perempuan">perempuan</option>
 
-<option value="<?= $karyawan["gender"] ;?>">Laki-laki</option>
+<option name='gender[]' value="laki-laki">Laki-laki</option>
 
 
 </select> <br>
